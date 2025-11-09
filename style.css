@@ -1,0 +1,139 @@
+/* ---------- General Styles ---------- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ---------- Layout Containers ---------- */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: linear-gradient(135deg, #004e92, #000428);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.name {
+  margin: 0.2em 0;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-style: italic;
+  color: #cfe0ff;
+}
+
+.personal-info p {
+  margin: 0.3em 0;
+  color: #dbe7ff;
+}
+
+.personal-info a {
+  color: #ffd166;
+  text-decoration: none;
+}
+
+.personal-info a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Projects Section ---------- */
+main {
+  margin: 2rem 0;
+}
+
+#projects h2 {
+  text-align: center;
+  color: #003566;
+  margin-bottom: 1.5rem;
+  font-size: 2em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #004e92;
+}
+
+.project-card p {
+  color: #444;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #004e92;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #002c5f;
+}
+
+.cv{
+  text-align: center;
+
+}
+.btn_cv{
+   display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #004e92;  
+  color: rgb(255, 255, 255);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+
+/* ---------- Footer ---------- */
+footer {
+  background: #000428;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ffd166;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
