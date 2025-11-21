@@ -17,6 +17,26 @@ header{
     padding: 2rem 1rem;
 }
 
+.back-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    margin-bottom: 0.75rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    background: rgba(90, 200, 250, 0.12);
+    color: #5ac8fa;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.back-link:hover,
+.back-link:focus-visible{
+    background: rgba(90, 200, 250, 0.25);
+    color: #a0e4ff;
+}
+
 header h1{
     margin: 0;
     font-size: clamp(2rem, 5vw, 3rem);

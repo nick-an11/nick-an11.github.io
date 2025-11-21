@@ -1,2 +1,2 @@
 # nick-an11.github.io
-just a personal website project that i do in my spare time
+Personal Project Website. I work on this in my spare time.
