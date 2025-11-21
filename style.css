@@ -33,6 +33,10 @@ body{
 
 .hero{
   position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 4rem 0 5rem;
   text-align: center;
   background: radial-gradient(circle at left, rgba(138, 59, 255, 0.5), transparent 60%), radial-gradient(circle at right, rgba(90, 200, 250, 0.35), transparent 55%), linear-gradient(135deg, #090c14, #05060b 60%, #0c0d16);

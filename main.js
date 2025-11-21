@@ -5,8 +5,14 @@
     }
 
     const projectsCta = document.querySelector('[data-cta="projects"]');
+    const projectsSection = document.querySelector('#projects');
     if (projectsCta) {
-        const triggerAnimation = () => {
+        const triggerAnimation = (event) => {
+            if (projectsSection) {
+                event.preventDefault();
+                projectsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+
             projectsCta.classList.remove('is-animating');
             // Force reflow so animation can restart if button is clicked quickly
             void projectsCta.offsetWidth;
