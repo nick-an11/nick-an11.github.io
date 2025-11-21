@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="project1.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Web Calculator</h1>
+        <p>Project-based learning · Build a fully responsive calculator</p>
+    </header>
+    <main>
+        <section class="calc">
+            <div class="calc_display" aria-live="polite">
+                <div class="calc_expression" data-display="expression">0</div>
+                <input type="text" readonly value="0" data-display="result" aria-label="Calculator display">
+            </div>
+            <div class="calc_keys">
+                <button data-action="clear" class="key key--function">AC</button>
+                <button data-action="delete" class="key key--function">DEL</button>
+                <button data-action="percent" class="key key--function">%</button>
+                <button data-action="operator" data-operator="divide" data-value="÷" class="key key--operator">÷</button>
+
+                <button data-action="number" data-value="7" class="key">7</button>
+                <button data-action="number" data-value="8" class="key">8</button>
+                <button data-action="number" data-value="9" class="key">9</button>
+                <button data-action="operator" data-operator="multiply" data-value="×" class="key key--operator">×</button>
+
+                <button data-action="number" data-value="4" class="key">4</button>
+                <button data-action="number" data-value="5" class="key">5</button>
+                <button data-action="number" data-value="6" class="key">6</button>
+                <button data-action="operator" data-operator="subtract" data-value="-" class="key key--operator">-</button>
+
+                <button data-action="number" data-value="1" class="key">1</button>
+                <button data-action="number" data-value="2" class="key">2</button>
+                <button data-action="number" data-value="3" class="key">3</button>
+                <button data-action="operator" data-operator="add" data-value="+" class="key key--operator">+</button>
+
+                <button data-action="sign" class="key key--function">±</button>
+                <button data-action="number" data-value="0" class="key key--zero">0</button>
+                <button data-action="decimal" class="key">.</button>
+                <button data-action="calculate" class="key key--equal">=</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <small>Built with semantic HTML, modern CSS, and vanilla JavaScript.</small>
+    </footer>
+</body>
+</html>
