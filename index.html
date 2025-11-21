@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
     <title>My Portfolio</title>
 </head>
 <body>
-     <header>
-    <div class="container">
+  <header class="hero">
+    <div class="container hero__content">
+      <div class="hero__eyebrow">STEM Student · Developer · Problem Solver</div>
       <h1 class="name">Nikolay Anisimovich</h1>
-      <p class="tagline">STEM Student | Developer | Problem Solver</p>
+      <p class="tagline">I build delightful, data-driven web experiences with clean code and bold visuals.</p>
       <div class="personal-info">
-        <p><strong>Email:</strong> n.anisimovich@gmail.com</p>
         <p><strong>Location:</strong> Berlin, Germany</p>
-        <p><strong>LinkedIn:</strong> <a href="#" target="_blank">https://www.linkedin.com/in/nikolay-anisimovich-86ba9b341/</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nikolay-anisimovich-86ba9b341/" target="_blank" rel="noreferrer">Connect</a></p>
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">Explore Projects</a>
       </div>
     </div>
   </header>
 
   <main>
     <section id="projects" class="container">
-      <h2>Projects</h2>
+      <div class="section-heading">
+        <p class="section-label">Featured Work</p>
+        <h2>Projects</h2>
+      </div>
       <div class="project-grid">
         <div class="project-card">
+          <div class="project-pill">Calculator</div>
           <h3>Project Title 1</h3>
-          <p>First project using HTML/CSS/Vanilla Javascript. Simple web-based calculator</p>
-          <a href="calculator/project1.html" class="btn">View Project</a>
+          <p>First project using HTML/CSS/Vanilla Javascript. Simple web-based calculator.</p>
+          <a href="calculator/project1.html" class="btn btn--primary">View Project</a>
         </div>
 
         <div class="project-card">
+          <div class="project-pill">Coming soon</div>
           <h3>Project Title 2</h3>
-          <p>under construction</p>
-          <a href="#" class="btn" target="_blank">View Project</a>
+          <p>Under construction.</p>
+          <a href="#" class="btn btn--secondary" target="_blank">Stay tuned</a>
         </div>
 
         <div class="project-card">
+          <div class="project-pill">Coming soon</div>
           <h3>Project Title 3</h3>
-          <p>under construction</p>
-          <a href="#" class="btn" target="_blank">View Project</a>
+          <p>Under construction.</p>
+          <a href="#" class="btn btn--secondary" target="_blank">Stay tuned</a>
         </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="container">
-      <p>© 2025 Nikolay Anisimovich. All rights reserved.</p>
+    <div class="container footer__content">
+      <p>© <span data-current-year>2025</span> Nikolay Anisimovich · All rights reserved.</p>
       <p>Contact: <a href="mailto:n.anisimovich@gmail.com">n.anisimovich(at)gmail.com</a></p>
     </div>
   </footer>
